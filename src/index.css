@@ -2,3 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+@media (max-width: 1200px) {
+    .tituloPrincipal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Conteiener-SECCION-1{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin: 15px;
+    }
+    .cont2{
+        display: none;
+    }
+    .cont3{
+        display: none;
+    }
+    .cont4{
+        width: 100%;
+    }
+    .cont5{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cont6{
+        justify-content: center;
+    }
+    .cont7{
+        width: 100%;
+        justify-content: center;
+    }
+    .xx{
+        display: none;
+    }
+    .title-perfi3{
+        text-align: center;
+    }
+}

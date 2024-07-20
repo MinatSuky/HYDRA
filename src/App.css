@@ -9,3 +9,12 @@ body{
   background-clip: text;
 
 }
+.title-perfi{
+  font-size: clamp(25px, 7vw, 55px );
+}
+.title-perfi2{
+  font-size: clamp(30px, 8vw, 65px );
+}
+.title-perfi3{
+  font-size: clamp(12px, 2vw, 20px );
+}
