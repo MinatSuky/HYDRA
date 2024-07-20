@@ -1,5 +1,11 @@
 
 body{
-  background-color: #302c42;
+  background-color: #302C42;
   font-family: "Montserrat", sans-serif;
+}
+.BG{
+
+  color: transparent;
+  background-clip: text;
+
 }
