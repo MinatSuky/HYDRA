@@ -50,7 +50,74 @@ function App() {
   return (
     <>
       <div className="PADRE">
-        <div className="conteiner-MENU flex justify-around mt-5">
+        <div className="h-[3vh] xx"></div>
+        <div className="conteiner-MENU flex justify-around">
+          <div className="xxx w-full">
+          <div className="navbar bg-[#302C42] ">
+            <div className="navbar-start">
+              <div className="dropdown">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M4 6h16M4 12h16M4 18h7" />
+                  </svg>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="#">ABOUT</a></li>
+                  <li><a href="#">SERVICES</a></li>
+                  <li><a href="#">TECHNOLOGIES</a></li>
+                  <li><a href="#">HOW TO</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="navbar-center">
+            
+            </div>
+            <div className="navbar-end">
+              <button className="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+              <button className="btn btn-ghost btn-circle">
+                <div className="indicator">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                  </svg>
+                  <span className="badge badge-xs badge-primary indicator-item"></span>
+                </div>
+              </button>
+            </div>
+          </div>
+          </div>
           <div className="cont1 flex gap-5 w-fit">
             <img src={img} alt="logo" />
             <div className="flex items-center">
@@ -70,7 +137,8 @@ function App() {
           </div>
         </div>
         <div className="Conteiener-SECCION-1 flex mt-44 mx-10">
-          <div className="cont4 w-[60%] flex flex-col justify-center gap-10 ">
+          <div className="cont4 w-[60%] flex flex-col justify-center items-center gap-10 ">
+          <img className="xxx" src={img1} alt="logotopo" width={80} />
             <div className="tituloPrincipal">
               <p className="font-bold title-perfi text-white"><span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Dive</span> Into The Depths</p>
               <p className="font-bold title-perfi text-white">Of <span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Virtual Reality</span></p>
@@ -89,8 +157,8 @@ function App() {
           </div>
 
           <div className="cont7 w-[40%] flex justify-end relative mx-10">
-            <img className="margen" src={img2} alt="" width={650} />
-            <svg class="absolute -z-10 w-[70%] h-[150%] left-[30%] xx" xmlns="http://www.w3.org/2000/svg" width="41" height="67"
+            <img className="margen z-20" src={img2} alt="" width={650} />
+            <svg class="absolute z-10 w-[70%] h-[150%] left-[30%] xx" xmlns="http://www.w3.org/2000/svg" width="41" height="67"
               viewBox="0 0 416 675" fill="none">
               <path d="M415 3C325.774 17.8434 155.913 102.224 190.271 320.998C224.63 539.772 78.4065 646.155 1 672"
                 stroke="url(#paint0_linear_1_23)" stroke-width="6" />
@@ -103,7 +171,7 @@ function App() {
                 </linearGradient>
               </defs>
             </svg>
-            <svg class="absolute -z-10 top-[-300px] w-[70%] h-[180%] xx" xmlns="http://www.w3.org/2000/svg" width="383" height="846"
+            <svg class="absolute z-10 top-[-300px] w-[70%] h-[180%] xx" xmlns="http://www.w3.org/2000/svg" width="383" height="846"
               viewBox="0 0 383 846" fill="none">
               <path
                 d="M3.19293 0C-0.0879101 140.127 37.2087 433.314 212.642 485.053C388.075 536.792 391.776 746.576 371.697 845"
@@ -118,7 +186,7 @@ function App() {
                 </linearGradient>
               </defs>
             </svg>
-            <svg class="absolute w-[90%] h-[120%] -z-10 xx" xmlns="http://www.w3.org/2000/svg" width="736" height="423"
+            <svg class="absolute w-[90%] h-[120%] z-10 xx" xmlns="http://www.w3.org/2000/svg" width="736" height="423"
               viewBox="0 0 736 423" fill="none">
               <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)"
                 stroke-width="6" />
@@ -134,13 +202,13 @@ function App() {
             </svg>
           </div>
         </div>
-        <div className="container-SECCION-2 flex justify-center mx-20 p-14 rounded-full mt-28 mb-28">
+        <div className="container-SECCION-2 flex justify-center mx-20 p-14 rounded-full mt-36 z-20 relative">
           <Slider className="w-[95%]" {...settings}>
             <div>
               <div className="cont8 flex gap-4 items-center justify-center">
-                
-                  <img src={img3} alt="ubicacion" />
-               
+
+                <img src={img3} alt="ubicacion" />
+
                 <div>
                   <p className="text-white textR font-bold"> Pay Us a Visit </p>
                   <p className="text-white textR2 font-light"> Union St, Seattle, WA 98101. </p>
@@ -170,6 +238,9 @@ function App() {
               </div>
             </div>
           </Slider>
+        </div>
+        <div className="container-SECCION-3 h-[20vh]">
+
         </div>
       </div>
     </>
