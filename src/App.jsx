@@ -4,6 +4,8 @@ import img2 from "../src/image/woman.png"
 import img3 from "../src/image/Location-Icon.png"
 import img4 from "../src/image/phone-call.png"
 import img5 from "../src/image/mail.png"
+import img6 from "../src/image/flecha larga.png"
+import img7 from "../src/image/game.png"
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,7 +74,7 @@ function App() {
                       <li><button className="w-fit mt-10 font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-xl text-[#302c42] cursor-pointer">JOIN HYDRA</button></li>
                       <li><button className="px-10 mt-5 py-4 border-2 rounded-xl font-semibold relative z-20">CONTACT US</button></li>
                     </ul>
-                    
+
                   </div>
                 </div>
               </div>
@@ -237,8 +239,50 @@ function App() {
             </div>
           </Slider>
         </div>
-        <div className="container-SECCION-3 h-[20vh]">
-
+        <div className="conteiner-SECCION-3  mt-20 mx-20 ">
+          <div className="conteiner flex w-[100%]">
+            <div className="cont11">
+              <p className="textR3 text-white text-centerr font-bold">INTRODUCTION</p>
+              <div className="flex items-center gap-5 con">
+                <p className="textR3 text-white font-light">TO HYDRA VR</p>
+                <img className="xx" src={img6} alt="" />
+              </div>
+            </div>
+            <div className="cont12 w-[50%] flex items-center ">
+              <p className="text-xl text-white font-light">
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
+          <div className="conteiner flex mt-20">
+            <div className="cont13 flex con w-[50%]">
+              <img src={img7} alt="" />
+            </div>
+            <div className="cont14 w-[50%] mt-5">
+              <p className="textR3 text-white text-centerr font-bold">ABOUT</p>
+              <p className="textR3 text-white text-centerr font-light">HYDRA VR</p>
+              <p className="mt-10 title-perfi3 text-white font-light">
+                Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
+              </p>
+              <div className="flex con">
+                <button className="w-fit mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">LET’S GET IN TOUCH</button>
+              </div>
+            </div>
+          </div>
+          <div className="conteiner flex w-[100%] mt-36">
+            <div className="cont11">
+              <p className="textR3 text-white text-centerr font-bold">WHY BUILD</p>
+              <div className="flex items-center gap-5 con">
+                <p className="textR3 text-white font-light">WITH HYDRA?</p>
+                <img className="xx" src={img6} alt="" />
+              </div>
+            </div>
+            <div className="cont12 w-[50%] flex items-center ">
+              <p className="text-xl text-white font-light">
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>

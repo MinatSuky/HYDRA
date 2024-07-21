@@ -5,7 +5,9 @@
 .xxx{
     display: none;
 }
-
+.cont11{
+    width: 50%;
+}
 
 @media (max-width: 1200px) {
     .tituloPrincipal{
@@ -43,6 +45,27 @@
         width: 100%;
         justify-content: center;
     }
+    .cont12{
+        display: none;
+    }
+    .cont11{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .cont13{
+        width: 100%;
+
+    }
+    .cont14{
+        width: 100%;
+
+    }
+    .con{
+        justify-content: center;
+    }
+    .text-centerr{
+        text-align: center;
+    }
     .xx{
         display: none;
     }
@@ -58,4 +81,11 @@
  .xxx{
     display: block;
  }
+ .conteiner-SECCION-3{
+ margin: 0 20px;
+ }
+ .conteiner{
+    flex-direction: column;
+ }
+
 }
