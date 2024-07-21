@@ -1,12 +1,50 @@
 import img from "../src/image/logo.png"
 import img1 from "../src/image/logotipo.png"
 import img2 from "../src/image/woman.png"
+import img3 from "../src/image/Location-Icon.png"
+import img4 from "../src/image/phone-call.png"
+import img5 from "../src/image/mail.png"
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import React from "react";
 
 
-import { useState } from 'react'
+
 import './App.css'
 
 function App() {
+
+
+  var settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1362,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 872,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+
+    ]
+  };
 
 
   return (
@@ -81,20 +119,57 @@ function App() {
               </defs>
             </svg>
             <svg class="absolute w-[90%] h-[120%] -z-10 xx" xmlns="http://www.w3.org/2000/svg" width="736" height="423"
-          viewBox="0 0 736 423" fill="none">
-          <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)"
-            stroke-width="6" />
-          <defs>
-            <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361"
-              gradientUnits="userSpaceOnUse">
-              <stop stop-color="#343045" />
-              <stop offset="0.213542" stop-color="#C0B7E8" />
-              <stop offset="0.71875" stop-color="#8176AF" />
-              <stop offset="1" stop-color="#343045" />
-            </linearGradient>
-          </defs>
-        </svg>
+              viewBox="0 0 736 423" fill="none">
+              <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)"
+                stroke-width="6" />
+              <defs>
+                <linearGradient id="paint0_linear_2_33" x1="700.5" y1="-3.99998" x2="14.5" y2="361"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#343045" />
+                  <stop offset="0.213542" stop-color="#C0B7E8" />
+                  <stop offset="0.71875" stop-color="#8176AF" />
+                  <stop offset="1" stop-color="#343045" />
+                </linearGradient>
+              </defs>
+            </svg>
           </div>
+        </div>
+        <div className="container-SECCION-2 flex justify-center mx-20 p-14 rounded-full mt-28 mb-28">
+          <Slider className="w-[95%]" {...settings}>
+            <div>
+              <div className="cont8 flex gap-4 items-center justify-center">
+                
+                  <img src={img3} alt="ubicacion" />
+               
+                <div>
+                  <p className="text-white textR font-bold"> Pay Us a Visit </p>
+                  <p className="text-white textR2 font-light"> Union St, Seattle, WA 98101. </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="cont9 flex gap-4 items-center justify-center">
+                <div>
+                  <img src={img4} alt="telefono" />
+                </div>
+                <div>
+                  <p className="text-white textR font-bold">Give Us a Call</p>
+                  <p className="text-white textR2 font-light">(110) 1111-1010</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="cont10 gap-4 flex items-center justify-center">
+                <div>
+                  <img src={img5} alt="email" />
+                </div>
+                <div>
+                  <p className="text-white textR font-bold">Send Us a Message</p>
+                  <p className="text-white textR2 font-light">Hydra@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </Slider>
         </div>
       </div>
     </>

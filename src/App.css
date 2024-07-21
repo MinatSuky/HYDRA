@@ -18,3 +18,13 @@ body{
 .title-perfi3{
   font-size: clamp(12px, 2vw, 20px );
 }
+.textR{
+  font-size: clamp(12px, 4vw, 26px );
+}
+.textR2{
+  font-size: clamp(12px, 4vw, 18px );
+}
+.container-SECCION-2{
+  background: linear-gradient(90deg, #211E2E 19%, #3A3456F2 49%, #211E2E 80%);
+  
+}
