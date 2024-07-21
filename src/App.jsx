@@ -53,10 +53,34 @@ function App() {
         <div className="h-[3vh] xx"></div>
         <div className="conteiner-MENU flex justify-around">
           <div className="xxx w-full">
-          <div className="navbar bg-[#302C42] ">
-            <div className="navbar-start">
-              <div className="dropdown">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+            <div className="navbar bg-[#302C42] ">
+              <div className="navbar-start">
+                <div className="drawer drawer-end relative z-30">
+                  <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+                  <div className="drawer-content">
+                    {/* Page content here */}
+                    <label htmlFor="my-drawer-4"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#A6ADBB" d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1" /></svg></label>
+                  </div>
+                  <div className="drawer-side">
+                    <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+                    <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+                      {/* Sidebar content here */}
+                      <li className="cursor-pointer hover:text-violet-300 duration-200"><a href="">ABOUT</a></li>
+                      <li className="cursor-pointer hover:text-violet-300 duration-200"><a href="">SERVICES</a></li>
+                      <li className="cursor-pointer hover:text-violet-300 duration-200"><a href="">TECHNOLOGIES</a></li>
+                      <li className="cursor-pointer hover:text-violet-300 duration-200"><a href="">HOW TO</a></li>
+                      <li><button className="w-fit mt-10 font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-xl text-[#302c42] cursor-pointer">JOIN HYDRA</button></li>
+                      <li><button className="px-10 mt-5 py-4 border-2 rounded-xl font-semibold relative z-20">CONTACT US</button></li>
+                    </ul>
+                    
+                  </div>
+                </div>
+              </div>
+              <div className="navbar-center">
+
+              </div>
+              <div className="navbar-end">
+                <button className="btn btn-ghost btn-circle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -67,56 +91,28 @@ function App() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="2"
-                      d="M4 6h16M4 12h16M4 18h7" />
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
-                </div>
-                <ul
-                  tabIndex={0}
-                  className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                  <li><a href="#">ABOUT</a></li>
-                  <li><a href="#">SERVICES</a></li>
-                  <li><a href="#">TECHNOLOGIES</a></li>
-                  <li><a href="#">HOW TO</a></li>
-                </ul>
+                </button>
+                <button className="btn btn-ghost btn-circle">
+                  <div className="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    <span className="badge badge-xs badge-primary indicator-item"></span>
+                  </div>
+                </button>
               </div>
             </div>
-            <div className="navbar-center">
-            
-            </div>
-            <div className="navbar-end">
-              <button className="btn btn-ghost btn-circle">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </button>
-              <button className="btn btn-ghost btn-circle">
-                <div className="indicator">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                  </svg>
-                  <span className="badge badge-xs badge-primary indicator-item"></span>
-                </div>
-              </button>
-            </div>
-          </div>
           </div>
           <div className="cont1 flex gap-5 w-fit">
             <img src={img} alt="logo" />
@@ -132,13 +128,15 @@ function App() {
             </ul>
           </div>
           <div className="cont3 flex items-center gap-7 text-white">
-            <button className="px-10 py-4 border-2 rounded-full font-semibold">CONTACT US</button>
-            <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42]">JOIN HYDRA</button>
+            <button className="px-10 py-4 border-2 rounded-full font-semibold relative z-20 bg-[#302C42]">CONTACT US</button>
+            <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">JOIN HYDRA</button>
           </div>
         </div>
         <div className="Conteiener-SECCION-1 flex mt-44 mx-10">
-          <div className="cont4 w-[60%] flex flex-col justify-center items-center gap-10 ">
-          <img className="xxx" src={img1} alt="logotopo" width={80} />
+          <div className="cont4 w-[60%] flex flex-col justify-center gap-10 ">
+            <div className="flex justify-center">
+              <img className="xxx" src={img1} alt="logotopo" width={80} />
+            </div>
             <div className="tituloPrincipal">
               <p className="font-bold title-perfi text-white"><span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Dive</span> Into The Depths</p>
               <p className="font-bold title-perfi text-white">Of <span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Virtual Reality</span></p>
