@@ -8,6 +8,10 @@
 .cont11{
     width: 50%;
 }
+.slick-track{
+    display: flex;
+    gap: 15px;
+}
 
 @media (max-width: 1200px) {
     .tituloPrincipal{
@@ -54,11 +58,12 @@
     }
     .cont13{
         width: 100%;
-
     }
     .cont14{
         width: 100%;
-
+    }
+    .cont15{
+        padding: 64px 50px;
     }
     .con{
         justify-content: center;

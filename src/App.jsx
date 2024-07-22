@@ -6,12 +6,21 @@ import img4 from "../src/image/phone-call.png"
 import img5 from "../src/image/mail.png"
 import img6 from "../src/image/flecha larga.png"
 import img7 from "../src/image/game.png"
+import img8 from "../src/image/Vector 7.png"
+import img9 from "../src/image/Vector 8.png"
+import img10 from "../src/image/Vector 4.png"
+import img11 from "../src/image/Vector 1.png"
+import img12 from "../src/image/gamer 1.png"
+import img14 from "../src/image/gamer 2.png"
+import img15 from "../src/image/gamer 3.png"
+import img16 from "../src/image/gamer 4.png"
+import img13 from "../src/image/vec.png"
+
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import React from "react";
-
 
 
 import './App.css'
@@ -47,13 +56,50 @@ function App() {
 
     ]
   };
+  var settingss = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 572,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+
+    ]
+  };
 
 
   return (
     <>
       <div className="PADRE">
         <div className="h-[3vh] xx"></div>
-        <div className="conteiner-MENU flex justify-around">
+        <div className="conteiner-MENU relative flex justify-around">
           <div className="xxx w-full">
             <div className="navbar bg-[#302C42] ">
               <div className="navbar-start">
@@ -140,9 +186,11 @@ function App() {
               <img className="xxx" src={img1} alt="logotopo" width={80} />
             </div>
             <div className="tituloPrincipal">
-              <p className="font-bold title-perfi text-white"><span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Dive</span> Into The Depths</p>
+              <p className="font-bold title-perfi text-white  text-Animaction"><span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Dive</span> Into The Depths</p>
               <p className="font-bold title-perfi text-white">Of <span className="title-perfi2 bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] BG">Virtual Reality</span></p>
             </div>
+            <img className="absolute z-10 top-72 left-0" src={img10} alt="fondo" /> {/*  figura de fondo */}
+            <img className="absolute z-10 top-20 left-0 xxx" src={img8} alt="fondo" /> {/*  figura de fondo */}
             <div className="cont5 ">
               <p className="text-white title-perfi3 font-extralight">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -239,7 +287,7 @@ function App() {
             </div>
           </Slider>
         </div>
-        <div className="conteiner-SECCION-3  mt-20 mx-20 ">
+        <div className="conteiner-SECCION-3  mt-20 mx-20 relative z-20">
           <div className="conteiner flex w-[100%]">
             <div className="cont11">
               <p className="textR3 text-white text-centerr font-bold">INTRODUCTION</p>
@@ -254,14 +302,17 @@ function App() {
               </p>
             </div>
           </div>
+          <img className="absolute w-[100%] z-10 top-72 left-0 xx" src={img8} alt="fondo" /> {/*  figura de fondo */}
+          <img className="absolute w-[100%] z-10 start-0 bottom-48 left-0 xx" src={img9} alt="fondo" /> {/*  figura de fondo */}
+          <img className="absolute -z-10  bottom-5 right-0 xxx opacity-25" src={img11} alt="fondo" /> {/*  figura de fondo */}
           <div className="conteiner flex mt-20">
-            <div className="cont13 flex con w-[50%]">
+            <div className="cont13 flex justify-center con w-[50%] z-20">
               <img src={img7} alt="" />
             </div>
             <div className="cont14 w-[50%] mt-5">
               <p className="textR3 text-white text-centerr font-bold">ABOUT</p>
               <p className="textR3 text-white text-centerr font-light">HYDRA VR</p>
-              <p className="mt-10 title-perfi3 text-white font-light">
+              <p className="mt-10 title-perfi3 text-white font-light ">
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
               </p>
               <div className="flex con">
@@ -273,7 +324,7 @@ function App() {
             <div className="cont11">
               <p className="textR3 text-white text-centerr font-bold">WHY BUILD</p>
               <div className="flex items-center gap-5 con">
-                <p className="textR3 text-white font-light">WITH HYDRA?</p>
+                <p className="textR3  text-white font-light">WITH HYDRA?</p>
                 <img className="xx" src={img6} alt="" />
               </div>
             </div>
@@ -284,6 +335,71 @@ function App() {
             </div>
           </div>
         </div>
+        <div className="conteiner-SECCION-3 flex justify-center mt-20 mx-20">
+          <Slider className="w-[97%]" {...settingss}>
+            <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
+              <div className="flex justify-center">
+                <img className="border-[14px] border-[#1e1c28] rounded-full w-full" src={img12} alt="abatar" />
+              </div>
+              <div>
+                <p className="text-center text-white font-bold text-2xl mt-10">SIMULATION</p>
+                <div className="flex justify-center">
+                  <img className="mt-2 w-[80%]" src={img13} alt="linea" />
+                </div>
+              </div>
+              <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
+              <div className="flex justify-center">
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer ">TRY IT NOW</button>
+              </div>
+            </div>
+            <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
+              <div className="flex justify-center">
+                <img className="border-[14px] border-[#1e1c28] rounded-full w-full" src={img14} alt="abatar" />
+              </div>
+              <div>
+                <p className="text-center text-white font-bold text-2xl mt-10">EDUCATION</p>
+                <div className="flex justify-center">
+                  <img className="mt-2 w-[80%]" src={img13} alt="linea" />
+                </div>
+              </div>
+              <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
+              <div className="flex justify-center">
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+              </div>
+            </div>
+            <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
+              <div className="flex justify-center">
+                <img className="border-[14px] border-[#1e1c28] rounded-full w-full" src={img15} alt="abatar" />
+              </div>
+              <div>
+                <p className="text-center text-white font-bold text-2xl mt-10">SELF-CARE</p>
+                <div className="flex justify-center">
+                  <img className="mt-2 w-[80%]" src={img13} alt="linea" />
+                </div>
+              </div>
+              <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
+              <div className="flex justify-center">
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+              </div>
+            </div>
+            <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
+              <div className="flex justify-center">
+                <img className="border-[14px] border-[#1e1c28] rounded-full w-full" src={img16} alt="abatar" />
+              </div>
+              <div>
+                <p className="text-center text-white font-bold text-2xl mt-10">OUTDOOR</p>
+                <div className="flex justify-center">
+                  <img className="mt-2 w-[80%]" src={img13} alt="linea" />
+                </div>
+              </div>
+              <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
+              <div className="flex justify-center">
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+              </div>
+            </div>
+          </Slider>
+        </div>
+        
       </div>
     </>
   )

@@ -28,7 +28,41 @@ body{
 .textR3{
   font-size: clamp(23px, 5vw, 48px );
 }
+.textR4{
+  font-size: clamp(10px, 1vw, 15px );
+}
 .container-SECCION-2{
   background: linear-gradient(90deg, #211E2E 19%, #3A3456F2 49%, #211E2E 80%);
   
+}
+.GRADI{
+  background: radial-gradient(#433D60 20%, #211E2E 65%);
+}
+.spacee{
+  white-space: nowrap;
+}
+.text-Animaction{
+  border-right: 4px solid #211E2E;
+  white-space: nowrap;
+  width: 17ch;
+  overflow: hidden;
+  animation: animaTexto steps(17) 2s, animaMarcador 5s linear forwards;
+}
+
+@keyframes animaMarcador {
+  0% {
+    border-right: 4px solid #211E2E;
+  }
+  100% {
+    border-right: transparent;
+  }
+}
+
+@keyframes animaTexto{
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 17ch;
+  }
 }
