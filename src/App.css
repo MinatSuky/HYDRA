@@ -1,4 +1,6 @@
 
+
+
 body{
   background-color: #302C42;
   font-family: "Montserrat", sans-serif;
@@ -30,6 +32,12 @@ body{
 }
 .textR4{
   font-size: clamp(10px, 1vw, 15px );
+}
+.textR5{
+  font-size: clamp(12px, 4vw, 60px );
+}
+.textR6{
+  font-size: clamp(12px, 4vw, 60px );
 }
 .container-SECCION-2{
   background: linear-gradient(90deg, #211E2E 19%, #3A3456F2 49%, #211E2E 80%);
@@ -65,4 +73,7 @@ body{
   100% {
     width: 17ch;
   }
+}
+.white-space{
+  white-space: nowrap;
 }

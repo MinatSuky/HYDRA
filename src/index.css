@@ -92,5 +92,8 @@
  .conteiner{
     flex-direction: column;
  }
+ .conteiner-SECCION-4{
+    margin: 80px 25px;
+    }
 
 }

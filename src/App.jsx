@@ -15,6 +15,7 @@ import img14 from "../src/image/gamer 2.png"
 import img15 from "../src/image/gamer 3.png"
 import img16 from "../src/image/gamer 4.png"
 import img13 from "../src/image/vec.png"
+import img17 from "../src/image/woman2.png"
 
 
 import "slick-carousel/slick/slick.css";
@@ -399,7 +400,15 @@ function App() {
             </div>
           </Slider>
         </div>
-        
+        <div className="conteiner-SECCION-4 mx-20 mt-40">
+          <div className="woman2 relative flex justify-center items-center">
+            <img className="w-full rounded-full" src={img17} alt="" />
+            <div className="absolute">
+              <p className="textR5 text-white text-centerr font-bold text-center white-space">TECHNOLOGIES & HARDWARE</p>
+              <p className="textR6  text-white font-light text-center white-space">USED BY HYDRA VR.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
