@@ -16,6 +16,18 @@ import img15 from "../src/image/gamer 3.png"
 import img16 from "../src/image/gamer 4.png"
 import img13 from "../src/image/vec.png"
 import img17 from "../src/image/woman2.png"
+import img18 from "../src/image/tech1.png"
+import img19 from "../src/image/tech2.png"
+import img20 from "../src/image/tech3.png"
+import img21 from "../src/image/tech4.png"
+import img22 from "../src/image/Vector 14.png"
+import img23 from "../src/image/01.png"
+import img24 from "../src/image/02.png"
+import img25 from "../src/image/03.png"
+import img26 from "../src/image/04.png"
+import img27 from "../src/image/Ellipse 8.png"
+import img28 from "../src/image/Ellipse 7.png"
+import img29 from "../src/image/Vector 15.png"
 
 
 import "slick-carousel/slick/slick.css";
@@ -85,6 +97,80 @@ function App() {
       },
       {
         breakpoint: 572,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+
+    ]
+  };
+  var settingsss = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1098,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 572,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1
+        }
+      },
+
+    ]
+  };
+  var settingssss = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1344,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1030,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 704,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -251,7 +337,7 @@ function App() {
             </svg>
           </div>
         </div>
-        <div className="container-SECCION-2 flex justify-center mx-20 p-14 rounded-full mt-36 z-20 relative">
+        <div className="container-SECCION-2 flex justify-center mx-20 p-14 rounded-full mt-36 z-20 relative shadow-2xl">
           <Slider className="w-[95%]" {...settings}>
             <div>
               <div className="cont8 flex gap-4 items-center justify-center">
@@ -317,7 +403,7 @@ function App() {
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
               </p>
               <div className="flex con">
-                <button className="w-fit mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">LET’S GET IN TOUCH</button>
+                <button className="w-fit shadow-2xl mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">LET’S GET IN TOUCH</button>
               </div>
             </div>
           </div>
@@ -336,7 +422,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="conteiner-SECCION-3 flex justify-center mt-20 mx-20">
+        <div className="conteiner-SECCION-3 flex justify-center mt-20 mx-10">
           <Slider className="w-[97%]" {...settingss}>
             <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
               <div className="flex justify-center">
@@ -400,15 +486,120 @@ function App() {
             </div>
           </Slider>
         </div>
-        <div className="conteiner-SECCION-4 mx-20 mt-40">
-          <div className="woman2 relative flex justify-center items-center">
-            <img className="w-full rounded-full" src={img17} alt="" />
+        <div className="conteiner-SECCION-4 mx-20 mt-40 relative">
+          <img className="absolute right-22" src={img22} alt="fondo" /> {/*  figura de fondo */}
+          <div className="woman2 relative flex justify-center items-center hover:scale-[1.01] duration-500 ease-in-out">
+            <img className="w-full rounded-full shadow-2xl " src={img17} alt="" />
             <div className="absolute">
               <p className="textR5 text-white text-centerr font-bold text-center white-space">TECHNOLOGIES & HARDWARE</p>
               <p className="textR6  text-white font-light text-center white-space">USED BY HYDRA VR.</p>
             </div>
           </div>
         </div>
+        <div className="conteiner-SECCION-5 mx-20 mt-20">
+          <div className="flex justify-center">
+            <Slider className="w-[95%] items-center" {...settingsss}>
+              <div>
+                <figure className="flex justify-center hover:scale-105 duration-200 ease-in-out">
+                  <img className="w-[70%]" src={img18} alt="marcas" />
+                </figure>
+              </div>
+              <div>
+                <figure className="flex justify-center hover:scale-105 duration-200 ease-in-out">
+                  <img src={img19} alt="marcas" />
+                </figure>
+              </div>
+              <div>
+                <figure className="flex justify-center hover:scale-105 duration-200 ease-in-out">
+                  <img src={img20} alt="marcas" />
+                </figure>
+              </div>
+              <div>
+                <figure className="flex justify-center hover:scale-105 duration-200 ease-in-out">
+                  <img src={img21} alt="marcas" />
+                </figure>
+              </div>
+            </Slider>
+          </div>
+          <div className="conteiner flex w-[100%] mt-10">
+            <div className="cont11">
+              <p className="textR3 text-white text-centerr font-bold">HOW WE BUILD</p>
+              <div className="flex items-center gap-5 con">
+                <p className="textR3 text-white font-light">WITH HYDRA VR?</p>
+                <img className="xx" src={img6} alt="" />
+              </div>
+            </div>
+            <div className="cont12 w-[50%] flex items-center ">
+              <p className="text-xl text-white font-light">
+                Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="conteiner-SECCION-6 mt-32">
+        <img className="absolute w-full" src={img29} alt="fondo" /> {/*  figura de fondo */}
+          <div className="mx-10 flex justify-evenly">
+          <Slider className="w-[97%] items-center" {...settingssss}>
+            <div>
+              <div className="contenedor flex flex-col items-center">
+                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                  <img className="absolute z-10" src={img27} alt="fondo" />
+                  <img className="absolute -z-0" src={img28} alt="fondo" />
+                  <img className="p-20 z-20 w-[225px]" src={img23} alt="redondel" />
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                  <p className="white-space text-2xl font-bold text-white">3D Concepcion</p>
+                </div>
+                <p className="white-space text-2xl font-bold text-white">& Design</p>
+              </div>
+            </div>
+            <div>
+              <div className="contenedor flex flex-col items-center">
+                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                  <img className="absolute z-10" src={img27} alt="fondo" />
+                  <img className="absolute -z-0" src={img28} alt="fondo" />
+                  <img className="p-20 z-20 w-[240px]" src={img24} alt="redondel" />
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                  <p className="white-space text-2xl font-bold text-white">Interaction</p>
+                </div>
+                <p className="white-space text-2xl font-bold text-white">Design</p>
+              </div>
+            </div>
+            <div>
+              <div className="contenedor flex flex-col items-center">
+                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                  <img className="absolute z-10" src={img27} alt="fondo" />
+                  <img className="absolute -z-0" src={img28} alt="fondo" />
+                  <img className="p-20 z-20 w-[240px]" src={img25} alt="redondel" />
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                  <p className="white-space text-2xl font-bold text-white">VR World</p>
+                </div>
+                <p className="white-space text-2xl font-bold text-white">User Testing</p>
+              </div>
+            </div>
+            <div>
+              <div className="contenedor flex flex-col items-center">
+                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                  <img className="absolute z-10" src={img27} alt="fondo" />
+                  <img className="absolute -z-0" src={img28} alt="fondo" />
+                  <img className="p-20 z-20 w-[240px]" src={img26} alt="redondel" />
+                </div>
+                <div className="flex items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                  <p className="white-space text-2xl font-bold text-white">Hydra VR</p>
+                </div>
+                <p className="white-space text-2xl font-bold text-white">Deploy</p>
+              </div>
+            </div>
+            </Slider>
+          </div>
+        </div>
+        <div className="h-[20vh]"></div>
       </div>
     </>
   )

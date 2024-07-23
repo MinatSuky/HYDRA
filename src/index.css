@@ -11,6 +11,7 @@
 .slick-track{
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -94,6 +95,9 @@
  }
  .conteiner-SECCION-4{
     margin: 80px 25px;
+    }
+    .conteiner-SECCION-5{
+        margin: 0 25px;
     }
 
 }
