@@ -258,15 +258,15 @@ function App() {
           </div>
           <div className="cont2 flex items-center">
             <ul className="text-white font-semibold flex gap-10">
-              <li className="cursor-pointer hover:text-violet-300 duration-200">ABOUT</li>
-              <li className="cursor-pointer hover:text-violet-300 duration-200">SERVICES</li>
-              <li className="cursor-pointer hover:text-violet-300 duration-200">TECHNOLOGIES</li>
-              <li className="cursor-pointer hover:text-violet-300 duration-200">HOW TO</li>
+              <li className="cursor-pointer hover:text-violet-300 duration-200 linear">ABOUT</li>
+              <li className="cursor-pointer hover:text-violet-300 duration-200 linear">SERVICES</li>
+              <li className="cursor-pointer hover:text-violet-300 duration-200 linear">TECHNOLOGIES</li>
+              <li className="cursor-pointer hover:text-violet-300 duration-200 linear">HOW TO</li>
             </ul>
           </div>
           <div className="cont3 flex items-center gap-7 text-white">
             <button className="px-10 py-4 border-2 rounded-full font-semibold relative z-20 bg-[#302C42]">CONTACT US</button>
-            <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">JOIN HYDRA</button>
+            <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer  hover:shadow-lg hover:shadow-[#8176AF] duration-200 z-30">JOIN HYDRA</button>
           </div>
         </div>
         <div className="Conteiener-SECCION-1 flex justify-around mt-44 mx-10">
@@ -288,7 +288,7 @@ function App() {
               </p>
             </div>
             <div className="cont6 flex items-center gap-10">
-              <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-3 rounded-full text-[#302c42]">BUILD YOUR WORLD</button>
+              <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-3 rounded-full text-[#302c42] hover:shadow-lg hover:shadow-[#8176AF] duration-200">BUILD YOUR WORLD</button>
               <svg className="xx" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
             </div>
           </div>
@@ -405,7 +405,7 @@ function App() {
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.
               </p>
               <div className="flex con">
-                <button className="w-fit shadow-2xl mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">LET’S GET IN TOUCH</button>
+                <button className="w-fit shadow-2xl mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200 z-30">LET’S GET IN TOUCH</button>
               </div>
             </div>
           </div>
@@ -438,7 +438,7 @@ function App() {
               </div>
               <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
               <div className="flex justify-center">
-                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer ">TRY IT NOW</button>
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200">TRY IT NOW</button>
               </div>
             </div>
             <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
@@ -453,7 +453,7 @@ function App() {
               </div>
               <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
               <div className="flex justify-center">
-                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200">TRY IT NOW</button>
               </div>
             </div>
             <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
@@ -468,7 +468,7 @@ function App() {
               </div>
               <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
               <div className="flex justify-center">
-                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200">TRY IT NOW</button>
               </div>
             </div>
             <div className="cont15 w-[25%] px-14 py-12 rounded-[40px] GRADI">
@@ -483,7 +483,7 @@ function App() {
               </div>
               <p className="textR4 mt-10 text-center text-white font-light">Vitae sapien pellentesque  habitant morbi <br />  nunc. Viverra  aliquet porttitor rhoncus <br /> libero justo laoreet sit amet vitae.</p>
               <div className="flex justify-center">
-                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">TRY IT NOW</button>
+                <button className="spacee textR4 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200">TRY IT NOW</button>
               </div>
             </div>
           </Slider>
@@ -622,7 +622,7 @@ function App() {
               <input className="w-full mt-8 pb-40 bg-transparent border-2 p-6 rounded-[40px]" type="text" name="Subject" id="Subject" placeholder="Subject" />
 
               <div className="flex justify-center">
-                <button className="spacee textR4  mb-20 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">SEND TO HYDRA</button>
+                <button className="spacee textR4  mb-20 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer hover:shadow-lg hover:shadow-[#8176AF] duration-200">SEND TO HYDRA</button>
               </div>
             </div>
           </div>
