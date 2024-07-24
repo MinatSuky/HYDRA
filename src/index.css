@@ -99,5 +99,14 @@
     .conteiner-SECCION-5{
         margin: 0 25px;
     }
-
+    .conteiner-SECCION-7{
+        margin: 45px 40px ;
+    }
+    .contenedorr{
+        margin: 0 30px;
+    }
+    .cont17{
+        flex-direction: column;
+    }
+    
 }

@@ -28,6 +28,8 @@ import img26 from "../src/image/04.png"
 import img27 from "../src/image/Ellipse 8.png"
 import img28 from "../src/image/Ellipse 7.png"
 import img29 from "../src/image/Vector 15.png"
+import img30 from "../src/image/Vector 16.png"
+import img31 from "../src/image/Vector 17.png"
 
 
 import "slick-carousel/slick/slick.css";
@@ -267,8 +269,8 @@ function App() {
             <button className="w-fit font-semibold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-10 py-4 rounded-full text-[#302c42] cursor-pointer">JOIN HYDRA</button>
           </div>
         </div>
-        <div className="Conteiener-SECCION-1 flex mt-44 mx-10">
-          <div className="cont4 w-[60%] flex flex-col justify-center gap-10 ">
+        <div className="Conteiener-SECCION-1 flex justify-around mt-44 mx-10">
+          <div className="cont4 flex flex-col justify-center gap-10 ">
             <div className="flex justify-center">
               <img className="xxx" src={img1} alt="logotopo" width={80} />
             </div>
@@ -291,7 +293,7 @@ function App() {
             </div>
           </div>
 
-          <div className="cont7 w-[40%] flex justify-end relative mx-10">
+          <div className="cont7 flex justify-end relative mx-10">
             <img className="margen z-20" src={img2} alt="" width={650} />
             <svg class="absolute z-10 w-[70%] h-[150%] left-[30%] xx" xmlns="http://www.w3.org/2000/svg" width="41" height="67"
               viewBox="0 0 416 675" fill="none">
@@ -321,7 +323,7 @@ function App() {
                 </linearGradient>
               </defs>
             </svg>
-            <svg class="absolute w-[90%] h-[120%] z-10 xx" xmlns="http://www.w3.org/2000/svg" width="736" height="423"
+            <svg class="absolute w-[100%] z-10 xx" xmlns="http://www.w3.org/2000/svg" width="936" height="923"
               viewBox="0 0 736 423" fill="none">
               <path d="M738.5 4.5C491.667 -7.66666 -0.900015 58.9 3.49999 422.5" stroke="url(#paint0_linear_2_33)"
                 stroke-width="6" />
@@ -537,69 +539,104 @@ function App() {
           </div>
         </div>
         <div className="conteiner-SECCION-6 mt-32">
-        <img className="absolute w-full" src={img29} alt="fondo" /> {/*  figura de fondo */}
+          <img className="absolute w-full" src={img29} alt="fondo" /> {/*  figura de fondo */}
           <div className="mx-10 flex justify-evenly">
-          <Slider className="w-[97%] items-center" {...settingssss}>
-            <div>
-              <div className="contenedor flex flex-col items-center">
-                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
-                  <img className="absolute z-10" src={img27} alt="fondo" />
-                  <img className="absolute -z-0" src={img28} alt="fondo" />
-                  <img className="p-20 z-20 w-[225px]" src={img23} alt="redondel" />
+            <Slider className="w-[97%] items-center" {...settingssss}>
+              <div>
+                <div className="contenedor flex flex-col items-center">
+                  <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                    <img className="absolute z-10" src={img27} alt="fondo" />
+                    <img className="absolute -z-0" src={img28} alt="fondo" />
+                    <img className="p-20 z-20 w-[225px]" src={img23} alt="redondel" />
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                    <p className="white-space text-2xl font-bold text-white">3D Concepcion</p>
+                  </div>
+                  <p className="white-space text-2xl font-bold text-white">& Design</p>
                 </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
-                  <p className="white-space text-2xl font-bold text-white">3D Concepcion</p>
-                </div>
-                <p className="white-space text-2xl font-bold text-white">& Design</p>
               </div>
-            </div>
-            <div>
-              <div className="contenedor flex flex-col items-center">
-                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
-                  <img className="absolute z-10" src={img27} alt="fondo" />
-                  <img className="absolute -z-0" src={img28} alt="fondo" />
-                  <img className="p-20 z-20 w-[240px]" src={img24} alt="redondel" />
+              <div>
+                <div className="contenedor flex flex-col items-center">
+                  <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                    <img className="absolute z-10" src={img27} alt="fondo" />
+                    <img className="absolute -z-0" src={img28} alt="fondo" />
+                    <img className="p-20 z-20 w-[240px]" src={img24} alt="redondel" />
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                    <p className="white-space text-2xl font-bold text-white">Interaction</p>
+                  </div>
+                  <p className="white-space text-2xl font-bold text-white">Design</p>
                 </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
-                  <p className="white-space text-2xl font-bold text-white">Interaction</p>
-                </div>
-                <p className="white-space text-2xl font-bold text-white">Design</p>
               </div>
-            </div>
-            <div>
-              <div className="contenedor flex flex-col items-center">
-                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
-                  <img className="absolute z-10" src={img27} alt="fondo" />
-                  <img className="absolute -z-0" src={img28} alt="fondo" />
-                  <img className="p-20 z-20 w-[240px]" src={img25} alt="redondel" />
+              <div>
+                <div className="contenedor flex flex-col items-center">
+                  <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                    <img className="absolute z-10" src={img27} alt="fondo" />
+                    <img className="absolute -z-0" src={img28} alt="fondo" />
+                    <img className="p-20 z-20 w-[240px]" src={img25} alt="redondel" />
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                    <p className="white-space text-2xl font-bold text-white">VR World</p>
+                  </div>
+                  <p className="white-space text-2xl font-bold text-white">User Testing</p>
                 </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
-                  <p className="white-space text-2xl font-bold text-white">VR World</p>
-                </div>
-                <p className="white-space text-2xl font-bold text-white">User Testing</p>
               </div>
-            </div>
-            <div>
-              <div className="contenedor flex flex-col items-center">
-                <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
-                  <img className="absolute z-10" src={img27} alt="fondo" />
-                  <img className="absolute -z-0" src={img28} alt="fondo" />
-                  <img className="p-20 z-20 w-[240px]" src={img26} alt="redondel" />
+              <div>
+                <div className="contenedor flex flex-col items-center">
+                  <div className="w-[85%] hover:scale-105 duration-200 ease-in-out rounded-full flex justify-center items-center mb-2 relative">
+                    <img className="absolute z-10" src={img27} alt="fondo" />
+                    <img className="absolute -z-0" src={img28} alt="fondo" />
+                    <img className="p-20 z-20 w-[240px]" src={img26} alt="redondel" />
+                  </div>
+                  <div className="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
+                    <p className="white-space text-2xl font-bold text-white">Hydra VR</p>
+                  </div>
+                  <p className="white-space text-2xl font-bold text-white">Deploy</p>
                 </div>
-                <div className="flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24"><path fill="#C0B7E8" d="M16.175 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.175l-4.9-4.9q-.3-.3-.288-.7t.313-.7q.3-.275.7-.288t.7.288l6.6 6.6q.15.15.213.325t.062.375t-.062.375t-.213.325l-6.6 6.6q-.275.275-.687.275T11.3 19.3q-.3-.3-.3-.712t.3-.713z" /></svg>
-                  <p className="white-space text-2xl font-bold text-white">Hydra VR</p>
-                </div>
-                <p className="white-space text-2xl font-bold text-white">Deploy</p>
               </div>
-            </div>
             </Slider>
           </div>
         </div>
-        <div className="h-[20vh]"></div>
+        <div className="conteiner-SECCION-7 mt-32 mx-28 GRADI rounded-[55px] shadow-2xl">
+          <div className="contenedorr mx-36">
+            <div className="flex flex-col items-center">
+              <p className="textR3 text-white text-centerr font-bold mt-10 opacity-85 white-space">JOIN HYDRA</p>
+              <img className="mt-5" src={img30} alt="linea" />
+              <p className="textR7 text-white font-light mt-5 text-center white-space">Let’s Build <br /> Your VR Experience</p>
+            </div>
+            <div className="cont17 flex justify-center w-full gap-3 mt-10">
+              <input className="w-full bg-transparent border-2 p-6 rounded-full" type="text" name="nombre" id="nombre" placeholder="First Name" />
+              <input className="w-full bg-transparent border-2 p-6 rounded-full" type="text" name="apellido" id="apellido" placeholder="last Name" />
+            </div>
+            <div className="cont17 flex justify-center w-full gap-3 mt-8">
+              <input className="w-full bg-transparent border-2 p-6 rounded-full" type="text" name="Email" id="Email" placeholder="Email" />
+              <input className="w-full bg-transparent border-2 p-6 rounded-full" type="text" name="Phone Number" id="Phone Number" placeholder="Phone Number" />
+            </div>
+            <div>
+
+              <input className="w-full mt-8 bg-transparent border-2 p-6 rounded-full" type="text" name="Subject" id="Subject" placeholder="Subject" />
+              <input className="w-full mt-8 pb-40 bg-transparent border-2 p-6 rounded-[40px]" type="text" name="Subject" id="Subject" placeholder="Subject" />
+
+              <div className="flex justify-center">
+                <button className="spacee textR4  mb-20 mt-10 font-bold bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] px-14 py-3 rounded-full text-[#302c42] cursor-pointer">SEND TO HYDRA</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="contenedor-SECCION-8 mt-20">
+         <div className="flex justify-center">
+         <img src={img31} alt="" />
+         </div>
+          <footer className="footer footer-center text-base-content p-4 mt-10">
+            <aside>
+              <p className="text-white font-bold">2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED</p>
+            </aside>
+          </footer>
+        </div>
       </div>
     </>
   )
