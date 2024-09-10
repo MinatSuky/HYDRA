@@ -270,7 +270,7 @@ function App() {
           </div>
         </div>
         <div className="Conteiener-SECCION-1 flex justify-around mt-44 mx-10">
-          <div className="cont4 flex flex-col justify-center gap-10 ">
+          <div className="cont4 flex flex-col justify-center gap-10 w-[40%]">
             <div className="flex justify-center">
               <img className="xxx" src={img1} alt="logotopo" width={80} />
             </div>
